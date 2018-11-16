@@ -39,6 +39,8 @@ defmodule GoogleApi.Speech.V1.Model.RecognitionConfig do
           :encoding => any(),
           :languageCode => any(),
           :maxAlternatives => any(),
+          :enableAutomaticPunctuation => any(),
+          :alternativeLanguageCodes => any(),
           :profanityFilter => any(),
           :sampleRateHertz => any(),
           :speechContexts => list(GoogleApi.Speech.V1.Model.SpeechContext.t())
@@ -48,6 +50,8 @@ defmodule GoogleApi.Speech.V1.Model.RecognitionConfig do
   field(:encoding)
   field(:languageCode)
   field(:maxAlternatives)
+  field(:alternativeLanguageCodes)
+  field(:enableAutomaticPunctuation)
   field(:profanityFilter)
   field(:sampleRateHertz)
   field(:speechContexts, as: GoogleApi.Speech.V1.Model.SpeechContext, type: :list)

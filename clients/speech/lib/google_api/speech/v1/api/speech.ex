@@ -70,7 +70,7 @@ defmodule GoogleApi.Speech.V1.Api.Speech do
     request =
       Request.new()
       |> Request.method(:post)
-      |> Request.url("/v1/speech:longrunningrecognize")
+      |> Request.url("/v1p1beta1/speech:longrunningrecognize")
       |> Request.add_optional_params(optional_params, opts)
 
     connection
